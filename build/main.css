@@ -1,0 +1,107 @@
+@import url(http://fonts.googleapis.com/css?family=Inconsolata );
+script, style, title {
+  display: none; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-weight: normal; }
+
+p {
+  margin: 0; }
+
+::-moz-selection {
+  background-color: #f9ec67; }
+
+::selection {
+  background-color: #f9ec67; }
+
+::-webkit-input-placeholder {
+  color: #aea9a9; }
+
+::-moz-placeholder {
+  color: #aea9a9; }
+
+:-ms-input-placeholder {
+  color: #aea9a9; }
+
+::placeholder {
+  color: #aea9a9; }
+
+body, html {
+  background-color: #fafcfc;
+  color: #171717;
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; }
+
+h1 {
+  font-size: 22px;
+  line-height: 32px; }
+
+p {
+  font-size: 16px;
+  line-height: 24px; }
+
+a {
+  color: #0f6ad4;
+  text-decoration: none; }
+
+input {
+  box-sizing: border-box; }
+
+body, html {
+  font-family: 'Inconsolata';
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-image: url('./images/texture-stars.gif');
+  background-repeat: repeat; }
+
+.main-characters {
+  max-width: 600px;
+  margin: 0 auto 50px auto; }
+
+.everyone-else {
+  max-width: 900px;
+  margin: 0 auto 5px auto; }
+
+.nav-item {
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  height: 32px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 18px;
+  padding-right: 14px;
+  padding-left: 14px;
+  line-height: 32px;
+  margin-bottom: 18px; }
+  .nav-item:hover {
+    border: 1px solid white;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2); }
+  .nav-item.selected {
+    background-color: rgba(242, 169, 0, 0.32);
+    border: 1px solid #F1D200;
+    color: #F0E8CF;
+    box-shadow: inset 2px 0 0 0 #F1D200, inset -2px 0 0 0 #F1D200; }
+    .nav-item.selected:hover {
+      box-shadow: inset 2px 0 0 0 #F1D200, inset -2px 0 0 0 #F1D200, 0 0 20px 0 rgba(241, 210, 0, 0.82); }
+
+.logo {
+  padding: 50px 0 80px 0; }
+
+img, .logo, .images, .nav {
+  text-align: center; }
+
+.images img {
+  margin: 80px 100px 80px 100px; }
