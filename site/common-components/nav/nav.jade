@@ -1,12 +1,21 @@
 mixin nav( activePage )
+	.created-by
+		.created-text
+			| Crafted with
+		.heart
+		.created-text
+			| by&nbsp;
+		a( href='http://twitter.com/_rywar' )
+			| @_rywar
+	.nav-toggle
 	.nav
 		.main-characters
 			a.nav-item( href='/goku.html', class=activePage === "goku" ? "selected" : "" )
 				| Goku
 			a.nav-item( href='/vegeta.html', class=activePage === "vegeta" ? "selected" : "" )
 				| Vegeta
-			a.nav-item( href='/krillen.html', class=activePage === "krillen" ? "selected" : "" )
-				| Krillen
+			a.nav-item( href='/krillin.html', class=activePage === "krillin" ? "selected" : "" )
+				| Krillin
 			a.nav-item( href='/tien.html', class=activePage === "tien" ? "selected" : "" )
 				| Tien
 			a.nav-item( href='/piccolo.html', class=activePage === "piccolo" ? "selected" : "" )
@@ -15,14 +24,14 @@ mixin nav( activePage )
 				| Gohan
 			a.nav-item( href='/goten.html', class=activePage === "goten" ? "selected" : "" )
 				| Goten
-			a.nav-item( href='/freeza.html', class=activePage === "freeza" ? "selected" : "" )
-				| Freeza
+			a.nav-item( href='/frieza.html', class=activePage === "frieza" ? "selected" : "" )
+				| Frieza
 			a.nav-item( href='/trunks.html', class=activePage === "trunks" ? "selected" : "" )
 				| Trunks
 			a.nav-item( href='/cell.html', class=activePage === "cell" ? "selected" : "" )
 				| Cell
-			a.nav-item( href='/majin-boo.html', class=activePage === "majin-boo" ? "selected" : "" )
-				| Majin Boo
+			a.nav-item( href='/buu.html', class=activePage === "buu" ? "selected" : "" )
+				| Buu
 		.everyone-else
 			a.nav-item( href='/android-16.html', class=activePage === "android-16" ? "selected" : "" )
 				| Android 16
@@ -52,6 +61,8 @@ mixin nav( activePage )
 				| Gogeta
 			a.nav-item( href='/gotenks.html', class=activePage === "gotenks" ? "selected" : "" )
 				| Gotenks
+			a.nav-item( href='/vegetto.html', class=activePage === "vegetto" ? "selected" : "" )
+				| Vegetto
 			a.nav-item( href='/guldo.html', class=activePage === "guldo" ? "selected" : "" )
 				| Guldo
 			a.nav-item( href='/jeice.html', class=activePage === "jeice" ? "selected" : "" )
@@ -70,3 +81,7 @@ mixin nav( activePage )
 				| Recoome
 			a.nav-item( href='/roshi.html', class=activePage === "roshi" ? "selected" : "" )
 				| Roshi
+			a.nav-item( href='/yamcha.html', class=activePage === "yamcha" ? "selected" : "" )
+				| Yamcha
+			a.nav-item( href='/other.html', class=activePage === "other" ? "selected" : "" )
+				| Other

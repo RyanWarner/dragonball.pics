@@ -17,6 +17,7 @@ html
 
 	color: $black;
 	font-family: $helvetica;
+	overflow-x: hidden;
 }
 
 h1
@@ -33,8 +34,15 @@ p
 
 a
 {
-	color: #0f6ad4;
+	color: #53A6D2;
 	text-decoration: none;
+	transition: all .2s ease-out;
+
+	&:hover
+	{
+		color: #A2EAE7;
+		text-shadow: 0 0 5px #A2EAE7;
+	}
 }
 
 input

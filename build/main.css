@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Inconsolata );
 script, style, title {
   display: none; }
@@ -39,7 +40,8 @@ p {
 body, html {
   background-color: #fafcfc;
   color: #171717;
-  font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; }
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  overflow-x: hidden; }
 
 h1 {
   font-size: 22px;
@@ -50,8 +52,13 @@ p {
   line-height: 24px; }
 
 a {
-  color: #0f6ad4;
-  text-decoration: none; }
+  color: #53A6D2;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-out;
+          transition: all .2s ease-out; }
+  a:hover {
+    color: #A2EAE7;
+    text-shadow: 0 0 5px #A2EAE7; }
 
 input {
   box-sizing: border-box; }
@@ -59,14 +66,64 @@ input {
 body, html {
   font-family: 'Inconsolata';
   width: 100%;
-  height: 100%;
   background-color: #000;
   background-image: url('./images/texture-stars.gif');
   background-repeat: repeat; }
 
+.created-by {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #F0E8CF;
+  font-size: 12px; }
+
+.created-text {
+  display: inline-block; }
+
+.heart {
+  display: inline-block;
+  background-image: url('./favicon.png');
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  background-size: 12px 12px;
+  top: 2px;
+  position: relative;
+  margin-left: 5px;
+  margin-right: 5px; }
+
+.nav {
+  -webkit-transition: height 0.3s ease-out;
+          transition: height 0.3s ease-out;
+  overflow: hidden;
+  height: auto; }
+  .nav.hidden {
+    height: 0px; }
+
+.nav-toggle {
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  margin-bottom: 30px; }
+  .nav-toggle:before {
+    display: inline-block;
+    content: '↓ Hide Nav\00a0'; }
+  .nav-toggle:after {
+    display: inline-block;
+    content: '↓'; }
+  .nav-toggle.collapsed:before {
+    display: inline-block;
+    content: '↑ Show Nav\00a0'; }
+  .nav-toggle.collapsed:after {
+    display: inline-block;
+    content: '↑'; }
+
 .main-characters {
   max-width: 600px;
-  margin: 0 auto 50px auto; }
+  margin: 0 auto 30px auto; }
 
 .everyone-else {
   max-width: 900px;
@@ -98,10 +155,28 @@ body, html {
       box-shadow: inset 2px 0 0 0 #F1D200, inset -2px 0 0 0 #F1D200, 0 0 20px 0 rgba(241, 210, 0, 0.82); }
 
 .logo {
-  padding: 50px 0 80px 0; }
+  padding: 50px 0 50px 0; }
 
 img, .logo, .images, .nav {
   text-align: center; }
 
 .images img {
-  margin: 80px 100px 80px 100px; }
+  padding: 60px 90px 60px 90px; }
+  @media (max-width: 700px) {
+    .images img {
+      display: block;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px 10px; } }
+  @media (max-width: 420px) {
+    .images img {
+      display: block;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 40px 10px; } }
+  @media (max-width: 320px) {
+    .images img {
+      display: block;
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 40px 10px; } }
