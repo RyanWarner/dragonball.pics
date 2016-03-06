@@ -1,7 +1,7 @@
-mixin head( title )
+mixin head( title, description )
 	head
 		meta( name='viewport', content='width=device-width' initial-scale='1' )
-		meta( name='description', content='A collection of oldschool DragonBall Z gifs.' )
+		meta( name='description', content='#{ description }' )
 		title #{ title }
 		link( rel='stylesheet', href='main.css' )
 		link( rel='icon', type='image/png', href='favicon.png' )
